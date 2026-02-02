@@ -2,72 +2,78 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio - Alternance Développement Web</title>
+  <title>Fatou SARR | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="hero">
+<header class="hero">
+
+  <div class="card">
+
+    <img src="assets/images/profile.jpg" class="profile-img" alt="Photo de Fatou">
+
     <h1>Fatou SARR</h1>
-    <h2>Étudiante en L3 Gestion & Informatique</h2>
-    <p>Recherche alternance Développeur Full-Stack Junior</p>
-    <a href="#projects" class="btn">Voir mes projets</a>
-  </header>
+    <h2>Étudiante L3 Gestion & Informatique</h2>
+    <p class="subtitle">Alternance Développeuse Full-Stack Junior</p>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h3>À propos de moi</h3>
-    <p>
-      Étudiante en double licence Gestion et Informatique, je développe des applications web
-      orientées métier. Je possède des bases solides en HTML, CSS, JavaScript, SQL et algorithmique.
-      Je recherche une alternance en développement full-stack afin de renforcer mes compétences
-      et participer à des projets concrets.
-    </p>
-  </section>
+    <div class="buttons">
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-  <!-- SKILLS -->
-  <section class="skills">
-    <h3>Compétences</h3>
-    <ul>
-      <li>HTML / CSS</li>
-      <li>JavaScript</li>
-      <li>SQL</li>
-      <li>Python (bases)</li>
-      <li>Java (bases)</li>
-      <li>Algorithmique</li>
-      <li>C</li>
-      <li>Git / GitHub</li>
-    </ul>
-  </section>
+  </div>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <h3>Projets</h3>
+</header>
 
-    <div class="project-card">
-      <h4>Portfolio personnel</h4>
-      <p>Site personnel pour présenter mes projets et compétences.</p>
-      <p><strong>Technos :</strong> HTML, CSS, JavaScript</p>
+<section class="about">
+  <h3>À propos</h3>
+  <p>
+    Étudiante en double licence Gestion et Informatique, je développe des applications web orientées métier.
+    Je possède des bases solides en HTML, CSS, JavaScript, SQL et algorithmique.
+    Je recherche une alternance afin de renforcer mes compétences et participer à des projets concrets.
+  </p>
+</section>
+
+<section class="skills">
+  <h3>Compétences</h3>
+  <div class="skills-grid">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Java</span>
+    <span>C</span>
+    <span>Git / GitHub</span>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h3>Projets</h3>
+
+  <div class="project-card">
+    <h4>Portfolio Personnel</h4>
+    <p>Site web personnel présentant mes compétences.</p>
+    <p><strong>Technos :</strong> HTML, CSS, JavaScript</p>
+
+    <div class="project-links">
       <a href="https://github.com/fatimasaliousarr-web/portfolio-alternance">GitHub</a>
       <a href="https://portfolio-alternance.vercel.app">Live</a>
     </div>
+  </div>
 
-  </section>
+</section>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <h3>Contact</h3>
-    <p>Email : Fatimasaliousarr@gmail.com</p>
-    <p>GitHub : https://github.com/fatimasaliousarr-web</p>
-    <p>Localisation : Paris</p>
-  </section>
+<section id="contact" class="contact">
+  <h3>Contact</h3>
+  <p>📧 Fatimasaliousarr@gmail.com</p>
+  <p>🐙 https://github.com/fatimasaliousarr-web</p>
+  <p>📍 Paris</p>
+</section>
 
-  <!-- JS -->
-  <script src="js/main.js"></script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
