@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Fatou SARR | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Fatou SARR | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="hero">
+<!-- NAVBAR -->
+<nav>
+  <h2>Fatou</h2>
+  <ul>
+    <li><a href="#home">Accueil</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <div class="card">
-
-    <img src="assets/images/profile.jpg" class="profile-img" alt="Photo de Fatou">
-
-    <h1>Fatou SARR</h1>
-    <h2>Étudiante L3 Gestion & Informatique</h2>
-    <p class="subtitle">Alternance Développeuse Full-Stack Junior</p>
-
-    <div class="buttons">
-      <a href="#projects">Projets</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-  </div>
-
+<!-- HERO -->
+<header id="home" class="hero">
+  <img src="assets/images/profile.jpg" class="profile" alt="photo">
+  <h1>Fatou SARR</h1>
+  <h3>Étudiante L3 Gestion & Informatique</h3>
+  <p>Alternance Développeuse Full-Stack Junior</p>
+  <a href="#projects" class="btn">Voir mes projets</a>
 </header>
 
-<section class="about">
-  <h3>À propos</h3>
+<!-- ABOUT -->
+<section id="about">
+  <h2>À propos</h2>
   <p>
-    Étudiante en double licence Gestion et Informatique, je développe des applications web orientées métier.
-    Je possède des bases solides en HTML, CSS, JavaScript, SQL et algorithmique.
-    Je recherche une alternance afin de renforcer mes compétences et participer à des projets concrets.
+    Étudiante en double licence Gestion et Informatique.
+    Je développe des applications web orientées métier.
+    Bases solides en HTML, CSS, JavaScript, SQL et algorithmique.
   </p>
 </section>
 
-<section class="skills">
-  <h3>Compétences</h3>
-  <div class="skills-grid">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>SQL</span>
-    <span>Python</span>
-    <span>Java</span>
-    <span>C</span>
-    <span>Git / GitHub</span>
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Compétences</h2>
+
+  <div class="grid">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>SQL</div>
+    <div>Python</div>
+    <div>Java</div>
+    <div>C</div>
+    <div>Git / GitHub</div>
   </div>
 </section>
 
-<section id="projects" class="projects">
-  <h3>Projets</h3>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projets</h2>
 
   <div class="project-card">
-    <h4>Portfolio Personnel</h4>
-    <p>Site web personnel présentant mes compétences.</p>
-    <p><strong>Technos :</strong> HTML, CSS, JavaScript</p>
+    <h3>Portfolio Personnel</h3>
+    <p>Site web personnel moderne ✨</p>
+    <p>HTML • CSS • JavaScript</p>
 
-    <div class="project-links">
+    <div class="links">
       <a href="https://github.com/fatimasaliousarr-web/portfolio-alternance">GitHub</a>
       <a href="https://portfolio-alternance.vercel.app">Live</a>
     </div>
@@ -67,12 +74,17 @@
 
 </section>
 
-<section id="contact" class="contact">
-  <h3>Contact</h3>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
   <p>📧 Fatimasaliousarr@gmail.com</p>
-  <p>🐙 https://github.com/fatimasaliousarr-web</p>
+  <p>🐙 github.com/fatimasaliousarr-web</p>
   <p>📍 Paris</p>
 </section>
+
+<footer>
+  <p>© 2026 Fatou SARR</p>
+</footer>
 
 <script src="js/main.js"></script>
 </body>
