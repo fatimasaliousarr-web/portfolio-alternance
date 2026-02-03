@@ -146,3 +146,38 @@ color:#ff5cff;
 #contact p{
 margin:10px;
 }
+
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding-top:40px;
+}
+
+.stat-card{
+background:#14002a;
+padding:30px 40px;
+border-radius:20px;
+text-align:center;
+width:180px;
+box-shadow:0 0 20px rgba(255,92,255,0.3);
+transition:0.3s;
+}
+
+.stat-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 35px rgba(255,92,255,0.6);
+}
+
+.stat-card h3{
+font-size:2rem;
+color:#ff5cff;
+}
+
+.stat-card p{
+margin-top:10px;
+opacity:0.8;
+}
