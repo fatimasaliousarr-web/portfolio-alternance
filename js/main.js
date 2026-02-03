@@ -1,32 +1,51 @@
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-let stars=[];
-
-for(let i=0;i<120;i++){
-stars.push({
-x:Math.random()*canvas.width,
-y:Math.random()*canvas.height,
-r:Math.random()*2
-});
+/* Ajuster taille écran */
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 }
 
-function animate(){
-ctx.clearRect(0,0,canvas.width,canvas.height);
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
 
-stars.forEach(s=>{
-ctx.fillStyle="white";
-ctx.beginPath();
-ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
-ctx.fill();
-s.y+=0.3;
-if(s.y>canvas.height) s.y=0;
-});
+/* Création étoiles */
+let stars = [];
 
-requestAnimationFrame(animate);
+function createStars() {
+  stars = [];
+  for (let i = 0; i < 200; i++) {
+    stars.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      radius: Math.random() * 2,
+      speed: Math.random() * 0.5 + 0.2
+    });
+  }
+}
+
+createStars();
+
+/* Animation */
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  stars.forEach(star => {
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+    ctx.fillStyle = "white";
+    ctx.fill();
+
+    star.y += star.speed;
+
+    if (star.y > canvas.height) {
+      star.y = 0;
+      star.x = Math.random() * canvas.width;
+    }
+  });
+
+  requestAnimationFrame(animate);
 }
 
 animate();
