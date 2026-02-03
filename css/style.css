@@ -244,3 +244,44 @@ gap:25px;
 100%{transform:translateX(-50%);}
 }
 
+/* SUMMARY CARDS */
+
+.summary-cards{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:80px;
+}
+
+.summary-card{
+background:linear-gradient(135deg,#1b0033,#14002a);
+width:260px;
+padding:40px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(255,92,255,0.4);
+transition:0.3s;
+}
+
+.summary-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 40px rgba(255,92,255,0.7);
+}
+
+.summary-card h2{
+font-size:3rem;
+color:#ff5cff;
+}
+
+.summary-card p{
+margin-top:10px;
+font-size:1.1rem;
+}
+
+.summary-card span{
+display:block;
+margin-top:5px;
+color:#00ff9c;
+}
+
