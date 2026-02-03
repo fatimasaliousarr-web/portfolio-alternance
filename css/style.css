@@ -285,3 +285,45 @@ margin-top:5px;
 color:#00ff9c;
 }
 
+/* ===== SUMMARY CARDS (Technologies / Frameworks / Database) ===== */
+
+.summary-cards{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:80px;
+}
+
+.summary-card{
+background:linear-gradient(135deg,#1b0033,#12001f);
+width:260px;
+padding:40px 30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 0 30px rgba(255,92,255,0.35);
+transition:0.4s;
+}
+
+.summary-card:hover{
+transform:translateY(-12px) scale(1.03);
+box-shadow:0 0 50px rgba(255,92,255,0.7);
+}
+
+.summary-card h2{
+font-size:3.2rem;
+color:#ff5cff;
+margin-bottom:10px;
+}
+
+.summary-card p{
+font-size:1.2rem;
+font-weight:600;
+}
+
+.summary-card span{
+display:block;
+margin-top:8px;
+color:#00ff9c;
+font-weight:bold;
+}
