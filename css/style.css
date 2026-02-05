@@ -337,8 +337,8 @@ font-weight:bold;
 }
 
 .project-images img {
-  width: 200%;
-  height: 560px;
+  width: 100%;
+  height: 260px;
   object-fit: cover;
   border-radius: 18px;
   box-shadow: 0 0 35px rgba(170, 120, 255, 0.45);
