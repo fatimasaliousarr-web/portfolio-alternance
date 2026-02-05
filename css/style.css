@@ -338,11 +338,17 @@ font-weight:bold;
 
 .project-images img {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  background: #0f0722;
+  padding: 12px;
   border-radius: 18px;
   box-shadow: 0 0 35px rgba(170, 120, 255, 0.45);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease;
+}
+.project-images {
+  align-items: center;
 }
 
 .project-images img:hover {
