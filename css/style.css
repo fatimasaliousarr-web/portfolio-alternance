@@ -347,9 +347,6 @@ font-weight:bold;
   box-shadow: 0 0 35px rgba(170, 120, 255, 0.45);
   transition: transform 0.4s ease;
 }
-.project-images {
-  align-items: center;
-}
 
 .project-images img:hover {
   transform: scale(1.08);
